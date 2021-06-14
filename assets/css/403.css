@@ -1,42 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+$color: #54FE55;
+$color2: #1a4f1a;
+$glowSize: 10px;
+
 html,body{
-    margin:0;
-    padding:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:salmon;
-    font-family:"Quicksand", sans-serif;
-
+   width: 100%;
+   height: 100%;
+   margin: 0;
 }
 
-#container_anim{
-    position:relative;
-    width:100%;
-    height:70%;
+*{
+   font-family: 'Press Start 2P', cursive;
+   box-sizing: border-box;
+}
+#app{
+   padding: 1rem;
+   background: black;
+   display: flex;
+   height: 100%;
+   justify-content: center; 
+   align-items: center;
+   color: $color;
+   text-shadow: 0px 0px $glowSize ;
+   font-size: 6rem;
+   flex-direction: column;
+   .txt {
+      font-size: 1.8rem;
+   }
+}
+@keyframes blink {
+    0%   {opacity: 0}
+    49%  {opacity: 0}
+    50%  {opacity: 1}
+    100% {opacity: 1}
 }
 
-#key{
-    position:absolute;
-    top:77%;
-    left:-33%;
-}
-
-#text{
-  font-size:4rem;
-  position:absolute;
-  top:55%;
-  width:100%;
-  text-align:center;
-}
-
-#credit{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    text-align:center;
-    bottom:
-}
-
-a{
-    color: rgb(115,102,102);
+.blink {
+   animation-name: blink;
+    animation-duration: 1s;
+   animation-iteration-count: infinite;
 }
