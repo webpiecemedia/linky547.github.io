@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: linky547.github.io
+Token: 9613be6dc59999b833bee31449b527700ca79e0c75df515450c6e78338f800de
